@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import validator from 'validator'
 import backgraund from '../../images/backgraund.png';
 
-function Login() {
+function Login({ onLogin }) {
 
   const [login, setLogin] = useState('');
   const [errorLogin, setErrorLogin] = useState('');
@@ -31,7 +31,7 @@ function Login() {
   function handlePassword(e) {
     const value = e.target.value
     const regexp = /[а-яё]/i
-    
+
     if (regexp.test(value)) {
       setErrorPassword('Пароль не должен содержать кириллицы')
     } else if (value.length < 8) {
@@ -44,6 +44,10 @@ function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    onLogin({
+      login: login,
+      password: password,
+    })
   }
 
   const submitButtonClassName = (

@@ -1,0 +1,31 @@
+.hotel-card {
+  width: 583px;
+  height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-card__image-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(65, 82, 46, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hotel-card__star {
+  margin-right: 3px;
+}
+
+.hotel-card__stars {
+  min-width: 97px;
+}
+
+.hotel-card__star:last-of-type {
+  margin-right: 0;
+}

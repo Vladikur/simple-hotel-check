@@ -1,0 +1,37 @@
+.hotel-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 32px 28px 32px;
+  box-sizing: border-box;
+}
+
+.hotel-list-header__location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-list-header__header {
+  margin: 0 0 0 0;
+  font-family: Roboto, 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #424242;
+}
+
+.hotel-list-header__arrow {
+  margin: 0 20px 0 20px;
+}
+
+.hotel-list-header__date {
+  margin: 0 0 0 0;
+  font-family: Roboto, 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #41522E;
+}

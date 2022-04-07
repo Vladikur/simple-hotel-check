@@ -5,3 +5,10 @@
 @import url(./components/App/App.css);
 
 @import url(./components/Login/Login.css);
+
+@import url(./components/Hotels/Hotels.css);
+@import url(./components/Hotels/Header/Header.css);
+@import url(./components/Hotels/SearchForm/SearchForm.css);
+@import url(./components/Hotels/HotelsList/HotelsList.css);
+@import url(./components/Hotels/HotelsList/HotelCard/HotelCard.css);
+@import url(./components/Hotels/HotelsList/HotelListHeader/HotelListHeader.css);
