@@ -7,7 +7,7 @@ React приложение, которое использует открытый
 Приложение написано на React.js с использованием React Create App. В данном проекте я использовал Redux и Redux Saga.
 
 ## Ссылка на GH Pages
-
+https://vladikur.github.io/simple-hotel-check
 
 ### Запуск React приложения 
 1. Клонируйте репозиторий.
