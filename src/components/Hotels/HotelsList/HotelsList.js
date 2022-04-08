@@ -7,11 +7,13 @@ function HotelsList() {
 
   const formData = useSelector(state => state.formData.formData)
   const foundHotelsData = useSelector(state => state.foundHotels.hotels)
+  const likedHotelsData = useSelector(state => state.LikedHotels.hotels)
 
   return (
     <div className="hotels-list">
       <HotelListHeader/>
-      <p className="hotels-list__liked-hotels">Добавлено в Избранное: 3 отеля</p>
+      <div className="hotels-list__carusel"></div>
+      <p className="hotels-list__liked-hotels">Добавлено в Избранное: {likedHotelsData.length} отелей</p>
       <div className="hotels-list__hotels-container">
         {foundHotelsData.map((hotel) => (
           <HotelCard
@@ -20,6 +22,8 @@ function HotelsList() {
             price={hotel.priceAvg}
             stars={hotel.stars}
             date={formData.checkIn}
+            days={formData.days}
+            thisHotel={hotel}
           />
         ))}
       </div>

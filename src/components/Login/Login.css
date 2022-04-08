@@ -125,12 +125,10 @@
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
-  transition: opacity 0.1s linear 0.1s;
 }
 
 .form__submit:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
-  border-radius: 4px;
   cursor: pointer;
 }
 

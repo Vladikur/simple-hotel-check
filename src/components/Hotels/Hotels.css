@@ -5,3 +5,13 @@
   min-height: 1024px;
   background: #F4F4F4;
 }
+
+.hotels__container1 {
+  max-width: 1048px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hotels__container2 {
+  margin-right: 24px;
+}

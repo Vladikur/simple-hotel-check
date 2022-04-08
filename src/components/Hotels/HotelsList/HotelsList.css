@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.hotels-list__carusel {
+  height: 178px;
+}
+
 .hotels-list__liked-hotels {
   margin: 0 0 0 0;
   font-family: Roboto, 'Arial', sans-serif;
@@ -21,6 +25,21 @@
 }
 
 .hotels-list__hotels-container {
+  margin: 24px 0 0 0;
   height: 500px;
   overflow-y: scroll;
+}
+
+.hotels-list__hotels-container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.hotels-list__hotels-container::-webkit-scrollbar-track {
+  background: #E7E7E7;
+  border-radius: 2px;
+}
+
+.hotels-list__hotels-container::-webkit-scrollbar-thumb {
+  background: #41522E;
+  border-radius: 2px;
 }

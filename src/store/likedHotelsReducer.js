@@ -10,7 +10,7 @@ export const LikedHotels = (state = defaultState, action) => {
     case ADD_HOTEL:
       return {...state, hotels: [...state.hotels, action.payload]}
     case REMOVE_HOTEL:
-      return {...state, hotels: [state.hotels.filter(hotel => hotel.hotelId !== action.payload)]}
+      return {...state, hotels: state.hotels.filter(hotel => hotel.hotelId !== action.payload)}
     default:
       return state
   }

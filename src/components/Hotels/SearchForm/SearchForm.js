@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from "react-redux";
 import { newFormDataAction } from '../../../store/formDataReducer';
+import { fetchHotelsAction } from '../../../store/foundHotelsReducer';
 
 
 function SearchForm() {
@@ -11,16 +12,21 @@ function SearchForm() {
   useEffect(() => {
     const now = new Date();
     const todayDate = getDateString(now)
-
     const initialState = {
       location: 'Москва', 
       checkIn: todayDate,
       days: 1,
     }
-
-    dispatch(newFormDataAction(initialState))
+    const checkOut = handleCheckOut(initialState)
+    const searchParams = {
+      location: initialState.location, 
+      checkIn: initialState.checkIn,
+      checkOut: checkOut,
+    }
 
     setData(initialState)
+    dispatch(newFormDataAction(initialState))
+    dispatch(fetchHotelsAction(searchParams))
   }, [])
 
   function getDateString(date) {
@@ -48,7 +54,7 @@ function SearchForm() {
     })
   }
 
-  function handleCheckOut() {
+  function handleCheckOut(data) {
     const checkIn = new Date(data.checkIn);
     const newDate = new Date (checkIn.getTime() + (data.days * 24 * 60 * 60 * 1000))
     const newDateString = getDateString(newDate)
@@ -57,13 +63,14 @@ function SearchForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    const checkOut = handleCheckOut(data)
     dispatch(newFormDataAction(data))
-    const checkOut = handleCheckOut()
-    console.log({
+    const searchParams = {
       location: data.location, 
       checkIn: data.checkIn,
       checkOut: checkOut,
-    })
+    }
+    dispatch(fetchHotelsAction(searchParams))
   }
 
   return (

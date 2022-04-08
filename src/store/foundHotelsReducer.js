@@ -3,6 +3,7 @@ const defaultState = {
 }
 
 const NEW_HOTELS = "NEW_HOTELS"
+export const FETCH_HOTELS = "FETCH_HOTELS"
 
 export const foundHotels = (state = defaultState, action) => {
   switch (action.type) {
@@ -14,3 +15,4 @@ export const foundHotels = (state = defaultState, action) => {
 }
 
 export const newFoundHotelsAction = (payload) => ({type: NEW_HOTELS, payload})
+export const fetchHotelsAction = (payload) => ({type: FETCH_HOTELS, payload})
