@@ -11,5 +11,6 @@
 @import url(./components/Hotels/SearchForm/SearchForm.css);
 @import url(./components/Hotels/Favorites/Favorites.css);
 @import url(./components/Hotels/HotelsList/HotelsList.css);
+@import url(./components/Hotels/HotelsList/Carousel/Carousel.css);
 @import url(./components/Hotels/HotelsList/HotelCard/HotelCard.css);
 @import url(./components/Hotels/HotelsList/HotelListHeader/HotelListHeader.css);

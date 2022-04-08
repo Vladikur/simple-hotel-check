@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import React, { useEffect, useState } from 'react';
+import Carousel from "./Carousel/Carousel";
 import HotelCard from "./HotelCard/HotelCard";
 import HotelListHeader from "./HotelListHeader/HotelListHeader";
 
@@ -12,7 +12,9 @@ function HotelsList() {
   return (
     <div className="hotels-list">
       <HotelListHeader/>
-      <div className="hotels-list__carusel"></div>
+      <div className="hotels-list__carusel">
+        <Carousel/>
+      </div>
       <p className="hotels-list__liked-hotels">Добавлено в Избранное: {likedHotelsData.length} отелей</p>
       <div className="hotels-list__hotels-container">
         {foundHotelsData.map((hotel) => (

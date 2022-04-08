@@ -23,10 +23,13 @@
 
 .favorites__button-container {
   margin: 33px 0 0 0;
+  display: flex;
 }
 
 .favorites__button {
-  padding: 3px 8px 3px 8px;
+  display: flex;
+  align-items: center;
+  padding: 2px 8px 2px 8px;
   margin: 0 8px 0 0;
   box-sizing: border-box;
   font-family: Roboto, 'Arial', sans-serif;
@@ -36,7 +39,7 @@
   line-height: 20px;
   letter-spacing: -0.408px;
   color: #41522E;
-  background-color: #FFFFFF;
+  background-color: white;
   border: 1px solid #41522E;
   border-radius: 4px;
 }
@@ -64,4 +67,18 @@
 .favorites__hotels-container::-webkit-scrollbar-thumb {
   background: #41522E;
   border-radius: 2px;
+}
+
+.favorites__button_type_disabled {
+  color: #99A0A3;
+  border: 1px solid #99A0A3;
+}
+
+.favorites__select-on-top {
+  margin: 0 0 0 2px;
+}
+
+.favorites__select-on-bottom {
+  margin: 0 0 0 2px;
+  transform: rotate(180deg);
 }
