@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/simple-hotel-check/static/css/main.be1d8fca.css",
-    "main.js": "/simple-hotel-check/static/js/main.d90a955c.js",
+    "main.css": "/simple-hotel-check/static/css/main.2bd7f7af.css",
+    "main.js": "/simple-hotel-check/static/js/main.e71c0de9.js",
     "static/js/787.3c9828e8.chunk.js": "/simple-hotel-check/static/js/787.3c9828e8.chunk.js",
     "static/media/backgraund.png": "/simple-hotel-check/static/media/backgraund.8ba195d52151bc221b26.png",
+    "static/media/carousel1.png": "/simple-hotel-check/static/media/carousel1.8da1ecc4eb42f0673a81.png",
+    "static/media/carousel3.png": "/simple-hotel-check/static/media/carousel3.b5fa36a1a945def391c3.png",
+    "static/media/carousel2.png": "/simple-hotel-check/static/media/carousel2.41f22ed41d2b51b04e7a.png",
     "static/media/Robotobold.ttf": "/simple-hotel-check/static/media/Robotobold.1ac02c026895c20df570.ttf",
     "static/media/Roboto.ttf": "/simple-hotel-check/static/media/Roboto.ecf539e1e3bc3e936f78.ttf",
     "static/media/Robotobold.woff": "/simple-hotel-check/static/media/Robotobold.1e0c22679977ac02c8f6.woff",
@@ -18,13 +21,15 @@
     "static/media/likeActive.svg": "/simple-hotel-check/static/media/likeActive.352ce643ffa74f24d681.svg",
     "index.html": "/simple-hotel-check/index.html",
     "static/media/calendar.svg": "/simple-hotel-check/static/media/calendar.062a05f3ccc2dbe1f63a.svg",
+    "static/media/selectDisabled.svg": "/simple-hotel-check/static/media/selectDisabled.bfaa505856e60ac5247e85197b03316e.svg",
+    "static/media/select.svg": "/simple-hotel-check/static/media/select.f497810348bb1309163ebec4ab0e4557.svg",
     "static/media/arrow.svg": "/simple-hotel-check/static/media/arrow.81d64087ae2a57654186925d14ddb224.svg",
-    "main.be1d8fca.css.map": "/simple-hotel-check/static/css/main.be1d8fca.css.map",
-    "main.d90a955c.js.map": "/simple-hotel-check/static/js/main.d90a955c.js.map",
+    "main.2bd7f7af.css.map": "/simple-hotel-check/static/css/main.2bd7f7af.css.map",
+    "main.e71c0de9.js.map": "/simple-hotel-check/static/js/main.e71c0de9.js.map",
     "787.3c9828e8.chunk.js.map": "/simple-hotel-check/static/js/787.3c9828e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be1d8fca.css",
-    "static/js/main.d90a955c.js"
+    "static/css/main.2bd7f7af.css",
+    "static/js/main.e71c0de9.js"
   ]
 }
