@@ -1,13 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
+import { useState, useEffect } from 'react';
 import house from '../../../../images/house.svg';
 import silverStar from '../../../../images/silverStar.svg';
 import goldStar from '../../../../images/goldStar.svg';
 import { likeHotelAction, removeHotelAction } from "../../../../store/likedHotelsReducer";
+import { countDaysString } from "../../../../utils/countHotels";
 
 function HotelCard({ name, price, stars, date, days, thisHotel, likedHotels }) {
 
   const dispatch = useDispatch()
   const likedHotelsData = useSelector(state => state.LikedHotels.hotels)
+
+  const [daysString, setDaysString] = useState('');
 
   const isLiked = likedHotelsData.some(i => i.hotelId === thisHotel.hotelId);
   const cardLikeButtonClassName = (
@@ -22,12 +26,16 @@ function HotelCard({ name, price, stars, date, days, thisHotel, likedHotels }) {
     if (!isLiked) {
       const hotel = thisHotel
       hotel.date = date
-      hotel.days = days
+      hotel.days = countDaysString(days)
       dispatch(likeHotelAction(thisHotel))
     } else {
       dispatch(removeHotelAction(thisHotel.hotelId))
     }
   }
+
+  useEffect(() => {
+    setDaysString(countDaysString(days))
+  }, [days])
 
   return (
     <div className="hotel-card">
@@ -39,7 +47,7 @@ function HotelCard({ name, price, stars, date, days, thisHotel, likedHotels }) {
         }
         <div className="hotel-card__info-container">
           <p className="hotel-card__name">{name}</p>
-          <p className="hotel-card__date">{ likedHotels ? thisHotel.date : date } -- { likedHotels ? thisHotel.days : days } день</p>
+          <p className="hotel-card__date">{ likedHotels ? thisHotel.date : date } -- { likedHotels ? thisHotel.days : daysString }</p>
           <div className="hotel-card__stars">
             <img src={ stars >= 1 ? goldStar : silverStar } alt="star" className="hotel-card__star" />
             <img src={ stars >= 2 ? goldStar : silverStar } alt="star" className="hotel-card__star" />

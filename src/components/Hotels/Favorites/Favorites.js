@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import HotelCard from "../HotelsList/HotelCard/HotelCard";
 import { sortPrice, sortStars } from "../../../utils/sortHotels";
 import { sortHotelAction } from "../../../store/likedHotelsReducer";
