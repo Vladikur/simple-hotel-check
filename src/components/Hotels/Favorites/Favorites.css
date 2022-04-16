@@ -82,3 +82,17 @@
   margin: 0 0 0 2px;
   transform: rotate(180deg);
 }
+
+@media screen and (max-width: 1080px) {
+  .favorites {
+    margin-top: 0px;
+    width: 310px;
+    height: 410px;
+  }
+
+  .favorites__hotels-container {
+    margin: 20px 0 0 0;
+    height: 245px;
+    overflow-y: scroll;
+  }
+}

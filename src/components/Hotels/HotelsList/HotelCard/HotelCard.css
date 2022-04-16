@@ -144,3 +144,23 @@
   top: 14px;
   right: 2px;
 }
+
+@media screen and (max-width: 1080px) {
+  .hotel-card__name {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .hotel-card__image-container {
+    display: none;
+  }
+  .hotel-card__price_position_found {
+    bottom: 0px;
+    right: -9px;
+  }
+  .hotel-card__like_position_found {
+    top: 13px;
+    right: -15px;
+  }
+}

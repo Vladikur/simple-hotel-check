@@ -59,3 +59,9 @@
   line-height: 28px;
   color: #41522E;
 }
+
+@media screen and (max-width: 690px) {
+  .hotels-list {
+    width: 310px;
+  }
+}

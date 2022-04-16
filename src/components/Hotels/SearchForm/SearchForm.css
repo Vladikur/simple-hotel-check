@@ -66,3 +66,19 @@
   opacity: 0.6;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1080px) {
+  .search-form {
+    margin-right: 44px;
+    width: 310px;
+    height: 410px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .search-form {
+    margin-right: 0;
+    margin-bottom: 44px;
+    min-width: 310px;
+  }
+}

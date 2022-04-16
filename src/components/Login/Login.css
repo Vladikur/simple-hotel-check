@@ -3,6 +3,8 @@
   min-height: 1024px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
   position: relative;
   display: flex;
   align-items: center;

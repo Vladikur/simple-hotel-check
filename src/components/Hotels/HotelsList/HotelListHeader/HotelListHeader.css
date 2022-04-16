@@ -35,3 +35,10 @@
   line-height: 28px;
   color: #41522E;
 }
+
+@media screen and (max-width: 690px) {
+  .hotel-list-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
