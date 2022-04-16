@@ -68,19 +68,20 @@ function Favorites() {
           </button>
         </div>
         <div className="favorites__hotels-container">
-        {likedHotelsData.map((hotel) => (
-          <HotelCard
-            key={hotel.hotelId}
-            name={hotel.hotelName}
-            price={hotel.priceAvg}
-            stars={hotel.stars}
-            date={formData.checkIn}
-            days={formData.days}
-            thisHotel={hotel}
-            likedHotels={true}
-          />
-        ))}
-      </div>
+          { likedHotelsData.length === 0 ? <p className="favorites__not-favorites">В избранном пока нет отелей.</p> : ''}
+          {likedHotelsData.map((hotel) => (
+            <HotelCard
+              key={hotel.hotelId}
+              name={hotel.hotelName}
+              price={hotel.priceAvg}
+              stars={hotel.stars}
+              date={formData.checkIn}
+              days={formData.days}
+              thisHotel={hotel}
+              likedHotels={true}
+            />
+          ))}
+        </div>
       </div>
   );
 }

@@ -41,4 +41,11 @@
     display: flex;
     flex-direction: column;
   }
+  .hotel-list-header__header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .hotel-list-header__location-container {
+    margin: 0 0 20px 0;
+  }
 }

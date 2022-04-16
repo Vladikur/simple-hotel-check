@@ -83,6 +83,18 @@
   transform: rotate(180deg);
 }
 
+.favorites__not-favorites {
+  text-align: center;
+  margin: 80px 0 0 0;
+  font-family: Roboto, 'Arial', sans-serif;
+  font-style: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #41522E;
+}
+
 @media screen and (max-width: 1080px) {
   .favorites {
     margin-top: 0px;
